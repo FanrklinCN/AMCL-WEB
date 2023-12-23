@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMCL。一款简洁、快速、高效的Minecarft启动器。" />
+    <meta name="keywords" content="AMCL,MC启动器,Minecraft启动器,Minecraft启动器" />
+    <meta name="copyright" content="AMCL" />
+    <meta name="author" content="AMCL" />
+    <meta name="reply-to" content="thz@thzstudent.top" />
+    <meta name="robots" content="all" />
+    <meta property="og:image" content="./img/logo.png" />
+    <meta name="og:title" content="AMCL" />
+    <meta name="og:url" content="https://amcl.thzstudent.top/" />
+    <meta name="og:description"
+        content="AMCL。一款简洁、快速、高效的Minecarft启动器。" />
+    <link rel="icon" href="./img/logo.png" />
+    <title>AMCL启动器-下载</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        ul {
+            position: relative;
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            width: 120px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .slider {
+            width: 100px;
+            height: 40px;
+            background-color: #5352ed;
+            border-radius: 4px;
+            position: absolute;
+            left: 170px;
+            bottom: 0;
+            z-index: -1;
+            transition: all ease 0.4s;
+            animation: 2s ease-in-out waves infinite;
+        }
+
+        li:nth-child(1):hover~.slider {
+            left: 50px;
+        }
+
+        li:nth-child(2):hover~.slider {
+            left: 170px;
+        }
+
+        li:nth-child(3):hover~.slider {
+            left: 290px;
+        }
+
+        li:nth-child(4):hover~.slider {
+            left: 410px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .download {
+            margin-bottom: 16px;
+            padding: 0 25px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .download .logo {
+            height: 100px;
+            width: 100px;
+            background-size: contain !important;
+            margin: 0 auto;
+        }
+
+        .download.windows .logo {
+            background: url('./img/windows-logo.png') center center no-repeat;
+        }
+
+        .download .downloads {
+            margin-top: 16px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .download.windows .downloads {
+            width: 55%;
+        }
+
+        .download.linux .downloads {
+            width: 55%;
+        }
+
+        .download.mac .downloads {
+            width: 55%;
+        }
+
+        .btn-link {
+            border-color: transparent;
+            background-color: transparent;
+            color: #337ab7;
+        }
+
+        .alt-downloads {
+            text-align: center;
+            margin-left: -25px;
+            margin-right: -25px;
+        }
+
+        .link-button {
+            color: white;
+            margin: 20px 0 5px;
+            padding: 10px 0;
+            font-size: 0.75rem;
+            width: 200px;
+            background-color: #373277;
+        }
+
+        .link-button small {
+            display: block;
+            margin-top: 0.5rem;
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.5rem;
+        }
+
+        .link-button small.build-type {
+            margin-top: 0;
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+
+        .link-button:hover {
+            background-color: rgba(55, 50, 119, 0.8);
+        }
+
+        .link-button img {
+            position: relative;
+            top: -2px;
+            margin-right: 10px;
+        }
+
+        button {
+            border: none;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 15px 35px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .download-icon {
+            display: inline;
+        }
+
+        .download-icon-accessible {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+            border: 0;
+        }
+
+        .swimlane {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        h2 {
+            padding-bottom: 3.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo-B.png" height="100" width="350" />
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="#">下载</a>
+                </li>
+                <li>
+                    <a href="https://afdian.net/a/thzstudent/" target=“_blank”>赞助</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Aurora-Studio-Team/Aurora-Minecarft-Launcher-AMCL/" target=“_blank”>GitHub</a>
+                </li>
+                <div class="slider"></div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="swimlane">
+            <h2>下载</h2>
+            <p></p>
+            <div class="alt-downloads">
+                <div class="download windows">
+                    <div class="logo"></div>
+                    <a href="">
+                        <button class="link-button dlink" data-os="win">
+                            <img class="download-icon" src="./img/download.svg" width="18px" height="18px"
+                                alt="下载"/>
+                            <img class="download-icon-accessible" width="18px"
+                                height="18px" alt="下载" />
+                            Windows
+                            <small>适用于Windows 7, 8, 10, 11</small>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div style="
+        margin-top: 45px;
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      ">
+            <p style="color: #666">Copyright © <a href="https://aurora.thzstudent.top">Aurora Studio</a>.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
